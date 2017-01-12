@@ -18,30 +18,38 @@ body {
   width: 100%;
 }
 
-.text {
-  max-width: 42em;
-  color: #fff;
-  width: 100%;
-}
-
 .btn {
   border-color: #97a49b;
   color: #fff;
-  background-color: #495562;
+  background-color: transparent;
 }
 
 .btn:hover {
   color: #efefef;
 }
 
-
 @media only screen and (min-width: 60em) {
 
-  .content {
+  .banner-content {
 
     position: absolute;
     bottom: 0;
     left: 0;
+    background-image: linear-gradient(rgba(73, 85, 98, 0), rgba(73, 85, 98, 1));
     width: 100%;
 
   }
+
+  .btn {
+
+    float: right;
+
+  }
+
+  .banner {
+    max-height: 500px;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+}
